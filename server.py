@@ -12,7 +12,7 @@ def decrypt_message(encrypted_message):
     decrypted = cipher.decrypt(encrypted_message)
     return decrypted.decode('utf-8') #No padding removal for simplicity
 
-#create a tcp socket
+#create tcp socket
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind(('localhost', 5000))
